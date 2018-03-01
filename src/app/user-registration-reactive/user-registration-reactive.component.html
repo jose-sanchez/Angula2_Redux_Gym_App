@@ -1,0 +1,27 @@
+<section>
+  <h1>User Registration(Model-driven Form Example) :</h1>
+  <form  [formGroup]="form" (ngSubmit)="onSubmit()">
+    <p>
+      <label>First Name:</label>
+      <input type="text" formControlName="userName" required>
+    </p>
+    <p>
+      <label>Last Name:</label>
+      <input type="text" formControlName="lastName" required>
+    </p>
+    <p>
+      <label>Birthday:</label>
+      <input type="text" formControlName="birthday" required>
+    </p>
+    <p>
+      <label>Password:</label>
+      <input type="password" formControlName="password" required>
+    </p>
+    <p>
+      <button type="submit" [disabled]="!form.valid" class="circular">Submit</button>
+          <button (click)="partialUpdate()">Partial Update</button>
+    <button (click)="fullUpdate()">Full Update</button>
+    <button (click)="reset()">Cancel</button>
+    </p>
+  </form>
+</section>

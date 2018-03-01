@@ -1,0 +1,43 @@
+<p>
+  exercise-list works Http mode!
+</p>
+<div class="exerciseList">
+    <div class="list-group">
+       <a *ngFor="let exercise of exercises"  class="list-group-item">
+           <span class="glyphicon glyphicon-plus"></span> {{exercise.name}} <span class="badge">Exersice</span>
+       </a>
+</div>
+</div>
+
+<p>
+  exercise-list works XMLHttpRequest mode!
+</p>
+<div class="exerciseList">
+    <div class="list-group">
+       <a *ngFor="let exercise of exercises2"  class="list-group-item">
+           <span class="glyphicon glyphicon-plus"></span> {{exercise.name}} <span class="badge">Exersice</span>
+       </a>
+</div>
+</div>
+
+<p>
+  exercise-list works redux without ngredux mode!
+</p>
+<div class="exerciseList">
+    <div class="list-group">
+       <a *ngFor="let exercise of exercises3"  class="list-group-item">
+           <span class="glyphicon glyphicon-plus"></span> {{exercise.name}} <span class="badge">Exersice</span>
+       </a>
+</div>
+</div>
+
+<p>
+  exercise-list works redux with ngredux mode!
+</p>
+<div class="exerciseList">
+    <div class="list-group">
+       <a *ngFor="let exercise of exercises4$ | async"  class="list-group-item">
+           <span class="glyphicon glyphicon-plus"></span> {{exercise.name}} <span class="badge">Exersice</span>
+       </a>
+</div>
+</div>

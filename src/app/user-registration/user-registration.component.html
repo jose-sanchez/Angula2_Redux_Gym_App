@@ -1,0 +1,24 @@
+<section>
+  <h1>User Registration(Template-driven Form Example) :</h1>
+  <form #f="ngForm" (ngSubmit)="onSubmit()">
+    <p>
+      <label>First Name:</label>
+      <input type="text" name="username" [(ngModel)]="user.userName" required>
+    </p>
+    <p>
+      <label>Last Name:</label>
+      <input type="text" name="lastname" [(ngModel)]="user.lastName" required>
+    </p>
+    <p>
+      <label>Birthday:</label>
+      <input type="text" name="birthday" [(ngModel)]="user.birthday" required>
+    </p>
+    <p>
+      <label>Password:</label>
+      <input type="password" name="password" [(ngModel)]="user.password" required>
+    </p>
+    <p>
+      <button type="submit" [disabled]="!f.valid" class="circular">Submit</button>
+    </p>
+  </form>
+</section>

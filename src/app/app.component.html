@@ -1,3 +1,43 @@
-<h1>
+
+<h1 class="app">
   {{title}}
 </h1>
+<header>Future Header</header>
+<div class="mainContainer">
+  <nav>
+    <!--<a routerLink="/gym" routerLinkActive="active">Gym</a>
+    <a routerLink="/profileInfo" routerLinkActive="active">Profile Info</a>-->
+    <a routerLink="/exerciseList" routerLinkActive="active">Exercise List</a>
+    <!--<a routerLink="/exerciseDashboard" routerLinkActive="active">Exercise Dashboard</a>  -->
+  </nav>
+  <router-outlet></router-outlet>
+<tabs>
+  <tab tabTitle="Template Driven">
+    <app-user-registration>Loading</app-user-registration>
+  </tab>
+  <tab tabTitle="Reactive Forms">
+		<app-user-registration-reactive>Loading</app-user-registration-reactive>
+  </tab>
+  <tab tabTitle="ExerciseList">
+		<app-exercise-list> Loading</app-exercise-list>
+  </tab>
+    <tab tabTitle="d3 visualizacion">
+    Will contain exercises with d3
+  </tab>
+</tabs>
+
+<!--<tabs22>
+  <tab tabTitle="Template">
+   hola
+  </tab>
+  <tab tabTitle="Reactive">
+		hola
+  </tab>
+  <tab tabTitle="ExerciseList">
+		hola
+  </tab>
+</tabs22>-->
+
+
+</div>
+<footer>Future Footer</footer>
